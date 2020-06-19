@@ -75,7 +75,6 @@ function setupBackgroundApp(app, myApp, dirname) {
     var envvar = process.env.MESSAGE_STYLE;
     process.env.MESSAGE_STYLE = undefined;
     selfCaller('/json', req, res, function(lowerCase, req, res) {
-      debugger
       try {
         lowerCase = JSON.parse(lowerCase).message;
       } catch(e) {
